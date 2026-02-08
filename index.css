@@ -38,3 +38,22 @@
   grid-template-rows: repeat(4, 150px);
   /* this is the same as grid-template-rows: 150px 150px 150px 150px; */
 }
+
+/* franction unit: */
+
+/* it is a unit of measurement that represents a fraction of the available space in the grid container. It is denoted by the "fr" unit. For example, if you have a grid container with three columns and you set the width of each column to 1fr, it means that each column will take up an equal share of the available space in the container. If you set one column to 2fr and the other two columns to 1fr, it means that the first column will take up twice as much space as the other two columns. */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+/* grid gap */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
