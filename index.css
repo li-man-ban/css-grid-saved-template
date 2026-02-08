@@ -1,0 +1,40 @@
+.box {
+  background-color: aqua;
+  border: 1px solid wheat;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+/* for column and row */
+.container {
+  display: grid;
+  grid-template-columns: 150px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+
+
+
+/* for minmax property */
+.container {
+  display: grid;
+  grid-template-columns: 150px 100px 100px minmax(100px, auto);
+   /* this will adjsu based on the content */
+   /* 100px is the minimum width and auto is the maximum width  */
+  grid-template-rows: 100px 100px 100px;
+}
+
+
+
+/* for repeat function */
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  /* it is the same as grid-template-columns: 150px 150px 150px; */
+  grid-template-rows: repeat(4, 150px);
+  /* this is the same as grid-template-rows: 150px 150px 150px 150px; */
+}
