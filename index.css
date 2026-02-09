@@ -84,3 +84,40 @@
   grid-area: 1 / 1 / 2 / 4;
 }
 /* fist value is for grid-row-start, second value is for grid-column-start, third value is for grid-row-end, fourth value is for grid-column-end */
+
+
+
+/* grid-template */
+
+.box {
+  background-color: aqua;
+  border: 1px solid wheat;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box4";
+}
+
+#box1 {
+  grid-area: box1;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
