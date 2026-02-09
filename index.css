@@ -57,3 +57,30 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
+}
+
+/* shorthand for grid gap */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 40px;
+}
+
+/* first value is for row gap and second value is for column gap */
+
+/* for the grid positioning   */
+
+#box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+#box2 {
+  grid-row: 2/4;
+}
+#box1{
+  grid-area: 1 / 1 / 2 / 4;
+}
+/* fist value is for grid-row-start, second value is for grid-column-start, third value is for grid-row-end, fourth value is for grid-column-end */
